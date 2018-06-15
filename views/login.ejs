@@ -1,0 +1,40 @@
+<html>
+    <head> 
+        <title> ToDo App </title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+        <style>
+                a {text-decoration: none; color: black;}
+                ul{list-style-type: none;}
+            </style>
+             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+
+    <body>       
+        <div class="container" >
+            <div class="row">
+                <form class="col-lg-6" action="/login" method="post">
+                    <p>
+                        <h2>Connexion : </h2>
+                        <input type="text" name="mail" id="mail" autofocus style="border-radius: 10px;" placeholder="email" /><br />
+                        <input type="text" name="pwRonin" id="pwRonin"  style="border-radius: 10px;" placeholder="password" /><br />
+                        <button class="btn btn-info" type="submit" />Valider</button>
+                    </p>
+                </form>
+                <form action="/signin" method="post">
+                    <p>
+                        <h2>Créer un compte : </h2>
+                        <input type="text" name="mailSign" id="mailSign" autofocus style="border-radius: 10px;" placeholder="email" /><br />
+                        <input type="text" name="pwSign" id="pwSign"  style="border-radius: 10px;" placeholder="password" /><br />
+                        <button class="btn btn-info" type="submit" />Valider</button>
+                    </p>
+                </form>
+            </div>
+
+
+        </div>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>
