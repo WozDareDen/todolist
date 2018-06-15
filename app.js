@@ -21,6 +21,7 @@ app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
 });
+
 // var router = express.Router();
 
 // // test route
@@ -41,7 +42,7 @@ app.use(function(req, res, next) {
 connection.init();
 routes.configure(app);
 
-var port = process.env.PORT || 8000;
-var server = app.listen(port, function(){
+const port = process.env.PORT || 8000;
+const server = app.listen(port, function(){
   console.log('Server listening on port ' + server.address().port);
 });

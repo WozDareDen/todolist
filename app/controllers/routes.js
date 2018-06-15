@@ -17,14 +17,14 @@ module.exports = {
       let content = JSON.stringify({mail: req.body.mail, pass:req.body.pwRonin});
       login.post(content,res);
     });
+
     app.get('/todo',function(req,res) {
       todo.get(res)
       .then(function(todos){
-        res.render("index",{todolist:todos});
-        })      
+        res.json(todolist);
+        })      6
     });
-    app.get('/todo/:id',function(req,res) {cls
-
+    app.get('/todo/:id',function(req,res) {
       todo.getByID(req.params.id,res);
       res.redirect();
     });
